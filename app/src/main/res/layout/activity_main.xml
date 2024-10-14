@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainContainer"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:id="@+id/tView1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="40dp"
+        android:text="ONE"/>
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:id="@+id/tView2"
+        android:text="TWO"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tView1"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:id="@+id/tView3"
+        android:text="THREE"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tView2"
+        android:layout_marginTop="20dp"
+
+        />
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:id="@+id/eText"
+        android:hint="Enter Num In Word"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tView3"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        />
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:id="@+id/btnn"
+        android:text="Submit"
+        android:textSize="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/eText"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
